@@ -3,6 +3,18 @@
 require_once 'Bicycle.php';
 require_once 'Car.php';
 
+
+$dacia = new Car;
+ 
+ try {
+        $dacia ->start();
+        } catch(Exception $e){
+            $dacia->$hasParkBrake = false;
+        }finally{
+            echo "Ma voiture roule comme un donut";
+        }
+
+
 $bike = new Bicycle();
 
 
