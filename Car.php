@@ -66,10 +66,14 @@ class Car extends Vehicle implements LightableInterface
     {
         $this->hasParkBrake = true;
     }
+      public function unsetParkBrake()
+    {
+        $this->hasParkBrake = false;
+    }
 
     public function start()
     {
-        if ($hasParkBrake = true ){
+        if ($hasParkBrake == true ){
             throw new Exception("Frein a main actif!");
         }
         try {
