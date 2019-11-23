@@ -76,12 +76,7 @@ class Car extends Vehicle implements LightableInterface
         if ($hasParkBrake == true ){
             throw new Exception("Frein a main actif!");
         }
-        try {
-        } catch(Exception $e){
-            $this->hasParkBrake = false;
-        }finally{
-            echo "Ma voiture roule comme un donut";
-        }
+       
         return "Engine started !";
     }
 }
